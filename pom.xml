@@ -14,13 +14,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <dependencies>
-        <!-- Здесь можно добавить зависимости, если будут нужны -->
-    </dependencies>
-
     <build>
         <plugins>
-            <!-- Компиляция под Java 17 -->
+            <!-- Плагин компиляции -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -31,7 +27,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Создание fat JAR -->
+            <!-- Плагин для создания fat JAR -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
