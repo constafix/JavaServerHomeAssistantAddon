@@ -1,0 +1,12 @@
+{
+  "name": "Java Server",
+  "version": "1.0",
+  "slug": "java_server",
+  "description": "Java-сервер в виде аддона Home Assistant",
+  "startup": "services",
+  "boot": "auto",
+  "arch": ["amd64", "aarch64"],
+  "ports": {
+    "8080/tcp": 8080
+  },
+  "host_network": true,

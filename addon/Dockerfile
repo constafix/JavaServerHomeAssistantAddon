@@ -1,0 +1,11 @@
+FROM eclipse-temurin:17-jdk-alpine
+
+WORKDIR /app
+
+# Копируем JAR и скрипт запуска
+COPY java-hass-addon-1.0-SNAPSHOT-jar-with-dependencies.jar app.jar
+COPY run.sh /run.sh
+
+RUN chmod +x /run.sh
+
+CMD ["/run.sh"]
