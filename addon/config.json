@@ -9,4 +9,5 @@
   "ports": {
     "8080/tcp": 8080
   },
-  "host_network": true,
+  "host_network": true
+}
